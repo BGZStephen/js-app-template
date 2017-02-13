@@ -1,0 +1,87 @@
+/* GLOBAL STYLES */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Russo One', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  box-sizing: border-box;
+}
+
+p {
+  letter-spacing: .1em;
+}
+
+/* END GLOBAL STYLES */
+
+/* CONTENT STYLES */
+
+#main-container {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(47,47,47);
+}
+
+#heading-container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+}
+
+#heading-container h1 {
+  padding: 35px 65px;
+  border: 5px dashed white;
+  font-size: 1.5em;
+}
+
+#intro-container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 4px solid white;
+  margin-bottom: 20px;
+}
+
+#intro-container h2 {
+  letter-spacing: .15em;
+  margin-bottom: 10px;
+}
+
+#intro-container p {
+  margin-bottom: 20px;
+}
+
+
+#app-container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* END CONTENT STYLES */
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  #heading-container,
+  #intro-container,
+  #app-container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #heading-container,
+  #intro-container,
+  #app-container {
+    width: 70%;
+  }
+}
